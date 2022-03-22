@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+   
+</body>
+<script>
+     var array_maior_50 = []
+     var array_menor_50 = []
+     for(var i = 0; i <= 12; i++){
+         var num = prompt(`Informe o ${i + 1}° número`)
+        if(num > 50){
+            array_maior_50.push(num)
+            
+        } else{
+            array_menor_50.push(num)
+        }  
+     }
+     alert(`Números acima de 50: ${array_maior_50} Números abaixo de 50: ${array_menor_50}`)
+</script>
+</html>

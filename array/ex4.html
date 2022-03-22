@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var romances = ["Memorial de Aires (1908)","Ressurreição (1872)", "Casa Velha (1885)","Memórias Póstumas de Brás Cubas (1881)", "Helena (1876)", "Quincas Borba (1891)", "Esaú e Jacó (1904)", "A mão e a luva (1874)", "Dom Casmurro (1899)", "Iaiá Garcia (1878)"]
+
+        var poesias = ['Coletânea de Poesias Americanas (1875)', 'Ocidentais (1880)', 'Falenas (1870)', 'Crisálidas (1864)', 'Poesias Completas(1901)'] 
+
+        var contos = ['Histórias sem Data (1884)', ' Papéis Avulsos (1882)', ' Contos Fluminenses (1870)', ' Histórias da Meia-Noite (1873)','Relíquias de Casa Velha (1906)', 'Páginas Recolhidas (1899)']
+        var tres_conto = []
+
+        romances.sort()
+        poesias.sort()
+        contos.sort()
+
+        var lista = [romances, poesias, contos]
+
+        for(var i = 0; i < lista.length; i++){
+            
+            var new_list = lista[i]
+            for(var cont = 0; cont< 3; cont++){
+                tres_conto.push(new_list.sort()[cont])
+            }
+        }
+        
+        console.log(tres_conto)
+
+    </script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drofo e Topper</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        /*No meio da sua jornada, Drofo, ganhou mais uma bota mágica, usou sua poção do sono e consumiu a poção anti-inteligência do Torper, encontrou um ovo de dragão e uma coxinha.
+
+        Descreva cada uma das ações acima. utilizando código.
+
+
+        */
+         
+        var array_drofo = {
+        aneis:'anel da invisibilidade', 
+        botas: ['Bota mágica', ' Bota mágica'],
+        pocao: ['sono', 'inocencia', 'inocencia']
+    };
+        var array_topper = {
+        capa: 'Capa da invisibilidade', 
+        pedra: 'Pedra do despertar', 
+        varinha: 'Varinha das varinhas', 
+        pocao: ['Poção da inocência', 'Poção da mentira', 'Poção da mentira', 'Poção anti-inteligência' ]
+    };
+        
+        array_topper.pocao.splice(1, 1)// consumiu uma poção da mentira
+
+        delete array_topper.pedra // perdeu sua pedra 
+
+        array_drofo.botas.splice(0,1) // remove uma bota do drofo
+        array_topper['botas'] = 'Bota magica' // adiciona bota a topper 
+        array_topper['escudo'] = 'Escudo mágico' // achou escudo
+        array_topper['espada'] = 'Espada mágica' // achou espada 
+
+
+        array_drofo.botas.push('Bota mágica') // achou uma bota magica
+        array_drofo.pocao.splice(0, 1) // consumiu uma poção de sono
+        
+        array_topper.pocao.pop() // consumiu pocao anti-inteligencia
+        
+        array_drofo['ovo'] = 'Ovo do dragão'// ganhou um ovo do dragão
+        array_drofo['comida'] = 'Coxinha'// ganhou uma coxinha
+
+        document.write('<h1> Iventario Drofo</h1>')
+        document.write('Aneis: ' + array_drofo.aneis,'<br>', 'Botas: ' + array_drofo.botas, '<br>', 'Poçoes: ' + array_drofo.pocao, '<br>', 'Ovos: '+ array_drofo.ovo, '<br>', 'Comida: ' + array_drofo.comida ) // iventario drofo
+
+        document.write('<h1> Iventario Topper</h1>')
+        document.write('Capas: '+ array_topper.capa,'<br>','Varinhas: '+ array_topper.varinha, '<br>','Poções: '+ array_topper.pocao, '<br>','Botas: '+ array_topper.botas, '<br>','Escudos: '+ array_topper.escudo, '<br>','Espadas: '+ array_topper.espada ) // iventario topper
+
+    </script>
+</html>
