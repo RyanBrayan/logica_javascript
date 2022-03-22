@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="py-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var prova1= parseFloat(prompt('Informe a 1° prova'))
+        var prova2 = parseFloat(prompt('Informe a 2° prova'))
+        var prova3 = parseFloat(prompt('Informe a 3° prova opcional'))
+        
+        if(prova1 > prova2){
+            prova2 = prova3
+        }else if(prova2 > prova1){
+            prova1 = prova3
+        }
+        var media = (prova1 + prova2) / 2
+
+        if(media >= 6){
+            alert('Aprovado')
+        } else if( media < 3 ){
+            alert('Reprovado')
+        } else if(media >= 3 && media < 6){
+            alert('Exame')
+        }
+    </script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero maior</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var marca_inicio = prompt('Marcação odometro começo do dia')
+        var final_dia = prompt('Marcação odometro final ')
+        var combustivel = prompt('Combustivel gasto no dia ')
+
+        var tot_passageiros =prompt('Valor total recebido dos passageiros')
+
+        var media = marca_inicio - final_dia
+        var liquido = combustivel * 2.90
+        var sub = liquido - tot_passageiros
+
+        
+        alert(`A media do cobustivel gasto é ${media / combustivel} `)
+        alert(`O valor liquido é ${sub}`)
+
+    </script>
+</html>

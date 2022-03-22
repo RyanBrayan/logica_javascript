@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var figuras = parseInt(prompt('Escolha uma das opções de formula:         [1]-Retângulo, [2]-Quadrado, [3]-Losango, [4]-Trapézio, [5]-Paralelogramo, [6]-Triângulo, [7]-Círculo'))
+        if(figuras === 1){
+            var base = prompt("Informe a base: ")
+            var altura = prompt('Informe a altura: ')
+            alert(`Seu resultado ${base * altura}`)
+        } else if(figuras === 2){
+            var lado = prompt("Informe um lado: ")
+            alert(`Seu resultado ${lado *  lado}`)
+        } else if(figuras === 3){
+            let diagonalMaior = prompt("Informe a diagonal maior: ")
+            let diagonalMenor = prompt('Informe a diagonal menor: ')
+            alert(`Seu resultado ${(diagonalMaior * diagonalMenor)/2}`)
+        } else if(figuras === 4){
+            let baseMaior = parseInt(prompt("Informe a base maior: "))
+            let baseMenor = parseInt(prompt('Informe a base menor: '))
+            let altura = prompt('Informe altura (h): ')
+            alert(`Seu resultado ${((baseMaior + baseMenor)*altura)/2}`)
+        } else if(figuras === 5){
+            let base = prompt("Informe a base: ")
+            let altura = prompt('Informe a altura: ')
+            alert(`Seu resultado ${(base*altura)/2}`)
+        } else if(figuras === 6){
+            let base = prompt("Informe a base: ")
+            let altura = prompt('Informe a altura: ')
+            alert(`Seu resultado ${(base*altura)/2}`)
+        } else if(figuras === 7){
+            let raio = prompt("Informe o Raio: ")
+            let pi = prompt('Adote um valor a Pi: ')
+            alert(`Seu resultado ${(raio * raio) * pi}`)
+        }
+    </script>
+</html>
